@@ -1,0 +1,151 @@
+html {
+  font-size: 3vmin;
+}
+
+.body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  width: 75vmin;
+  height: 100vmin;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  color: #cf3236;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: .25rem .25rem .25rem rgba(0, 0, 0, .9);
+}
+
+.subtitle {
+  font-size: .4375rem;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.section {
+  font-family: "Helvetica", "Arial", sans-serif;
+  width: 40%;
+  position: relative;
+  left: 5%;
+  margin-bottom: 1rem;
+}
+
+.section__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #cf3236;
+  margin: 0 0 .25rem;
+}
+
+.section__subtitle {
+  font-size: .75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section--main {
+  width: 75%;
+  left: 20%;
+  text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, .9);
+  text-align: right;
+}
+
+.section--main .section__title, .section--main .section__subtitle {
+  color: #fbdf6a;
+}
+
+.section--main .section__title {
+  font-size: 1.75rem;
+}
+
+.section--main .section__subtitle {
+  font-size: 1rem;
+}
+
+.metadata {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: .625rem;
+  padding-left: .5rem;
+  position: absolute;
+}
+
+.metadata__qr-code {
+  width: 3.5rem;
+  height: 3.5rem;
+  float: left;
+}
+
+.metadata__text {
+  padding-left: 4rem;
+}
+
+.metadata__line {
+  margin: 0 0 .1875rem;
+}
+
+.ribbon {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: .625rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1.5rem;
+  right: -2.5rem;
+  transform: rotate(-45deg);
+  padding: .25rem 2rem;
+  width: 6rem;
+  text-align: center;
+}
+
+/* Themes */
+.body--aleks-syntek {
+  background-color: #1e272e;
+}
+
+.body--aleks-syntek .container {
+  background-color: #241b18;
+  background-image: url("https://cps-static.rovicorp.com/3/JPG_500/MI0004/226/MI0004226725.jpg");
+  background-size: 75%;
+  background-position: bottom right;
+}
+
+.body--aleks-syntek .subtitle,
+.body--aleks-syntek .section__subtitle,
+.body--aleks-syntek .metadata {
+  color: #ffffff;
+}
+
+.body--aleks-syntek .title,
+.body--aleks-syntek .section__title {
+  color: #ffdd59; /* Yriel Yellow */
+}
+
+.body--aleks-syntek .section--main {
+  margin-top: 3.5rem;
+}
+
+.body--aleks-syntek .metadata {
+  bottom: .5rem;
+}
+
+.body--aleks-syntek .ribbon {
+  background-color: #ffdd59; /* Yriel Yellow */
+  color: #000000;
+}
