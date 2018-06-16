@@ -18,16 +18,10 @@
       .container {
         width: 75vmin;
         height: 100vmin;
-        /*background-color: #fbfcfe;*/
-        /*background-image: url("https://scontent.fham2-1.fna.fbcdn.net/v/t1.0-9/14650679_10154589448254747_4910720761696229037_n.jpg?_nc_cat=0&oh=3a4380bb3f50ded4c9f332fd7a73f0c6&oe=5BC12B32");*/
-        /*background-position: left bottom;*/
-        /*background-size: 65%;*/
-        background-color: #a2a7aa;
-        background-image: url("https://estereotipasradio.files.wordpress.com/2017/03/pascal.jpg");
-        background-size: 125%;
-        background-position: 1rem 5rem;
         background-repeat: no-repeat;
         margin: 0 auto;
+        position: relative;
+        overflow: hidden;
       }
 
       .header {
@@ -77,7 +71,6 @@
       .section--main {
         width: 75%;
         left: 20%;
-        top: 5rem;
         text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, .9);
         text-align: right;
       }
@@ -93,10 +86,76 @@
       .section--main .section__subtitle {
         font-size: 1rem;
       }
+
+      .metadata {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: .625rem;
+        padding-left: .5rem;
+        margin-top: 2rem;
+      }
+
+      .metadata__qr-code {
+        width: 3.5rem;
+        height: 3.5rem;
+        float: left;
+      }
+
+      .metadata__text {
+        padding-left: 4rem;
+      }
+
+      .metadata__line {
+        margin: .1875rem 0 0;
+      }
+
+      .ribbon {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: .625rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 1.5rem;
+        right: -2.5rem;
+        transform: rotate(-45deg);
+        padding: .25rem 2rem;
+        width: 6rem;
+        text-align: center;
+      }
+
+      /* Themes */
+      .body--aleks-syntek {
+        background-color: #1e272e;
+      }
+
+      .body--aleks-syntek .container {
+        background-color: #241b18;
+        background-image: url("https://cps-static.rovicorp.com/3/JPG_500/MI0004/226/MI0004226725.jpg");
+        background-size: 75%;
+        background-position: bottom right;
+      }
+
+      .body--aleks-syntek .subtitle,
+      .body--aleks-syntek .section__subtitle,
+      .body--aleks-syntek .metadata {
+        color: #ffffff;
+      }
+
+      .body--aleks-syntek .title,
+      .body--aleks-syntek .section__title {
+        color: #ffdd59; /* Yriel Yellow */
+      }
+
+      .body--aleks-syntek .section--main {
+        margin-top: 4rem;
+      }
+
+      .body--aleks-syntek .ribbon {
+        background-color: #ffdd59; /* Yriel Yellow */
+        color: #000000;
+      }
     </style>
   </head>
 
-  <body class="body">
+  <body class="body body--aleks-syntek">
     <div class="container">
       <header class="header">
         <h1 class="title"
@@ -107,16 +166,16 @@
 
       <section class="section">
         <h3 class="section__title"
-            contenteditable="true">Editorial</h3>
+            contenteditable="true">Sociedad</h3>
         <p class="section__subtitle"
-           contenteditable="true">Los millennials y sus memes: la decadencia cultural</p>
+           contenteditable="true">Barrer tu calle hace disminuir la corrupción <br> en 5%: estudio</p>
       </section>
 
       <section class="section">
         <h3 class="section__title"
             contenteditable="true">Economía</h3>
         <p class="section__subtitle"
-           contenteditable="true">¿Por qué los millennials no mejor trabajan y se callan de una buena vez?</p>
+           contenteditable="true">¿Por qué los millennials no se ponen a trabajar y se callan de una buena vez?</p>
       </section>
 
       <section class="section">
@@ -128,17 +187,30 @@
 
       <section class="section section--main">
         <h2 class="section__title"
-            contenteditable="true">Pascal Beltrán del Río</h2>
+            contenteditable="true">Aleks Syntek</h2>
         <p class="section__subtitle"
-           contenteditable="true">"Aunque he votado por el PAN en las últimas dos elecciones, no soy panista"</p>
+           contenteditable="true">"El reggaetón es el quinto <br> jinete del Apocalipsis"</p>
       </section>
 
-      <!-- <section>
-        <p>Junio 2018</p>
-        <p>Año 18, número 69</p>
-        <p>$ 300.00</p>
-        <p>Sólo edición impresa</p>
-      </section> -->
+      <section class="metadata">
+        <img class="metadata__qr-code"
+           src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=https://bit.ly/2ldjNx5&amp;qzone=2&amp;margin=0&amp;size=256x256&amp;ecc=L"
+           alt="thewarpaint.github.io/revista-senores-generator">
+
+        <div class="metadata__text"
+             contenteditable="true">
+          <p class="metadata__line">Junio 2018</p>
+          <p class="metadata__line">Año 18, número 72</p>
+          <p class="metadata__line">$ 300.00</p>
+          <p class="metadata__line">Sólo edición impresa</p>
+        </div>
+      </section>
+
+      <aside class="ribbon"
+             contenteditable="true">
+        Incluye membresía<br>
+        de Costco
+      </aside>
     </div>
   </body>
 </html>
