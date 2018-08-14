@@ -22,7 +22,6 @@ html {
 
 .title {
   margin: 0;
-  color: #cf3236;
   font-size: 4rem;
   font-family: "Playfair Display", serif;
   font-weight: normal;
@@ -51,7 +50,6 @@ html {
 .section__title {
   text-transform: uppercase;
   font-size: 1rem;
-  color: #cf3236;
   margin: 0 0 .25rem;
 }
 
@@ -62,14 +60,8 @@ html {
 }
 
 .section--main {
-  width: 75%;
-  left: 20%;
   text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, .9);
   text-align: right;
-}
-
-.section--main .section__title, .section--main .section__subtitle {
-  color: #fbdf6a;
 }
 
 .section--main .section__title {
@@ -115,6 +107,8 @@ html {
 }
 
 /* Themes */
+
+/* June 2018 */
 .body--aleks-syntek {
   background-color: #1e272e;
 }
@@ -138,6 +132,8 @@ html {
 }
 
 .body--aleks-syntek .section--main {
+  width: 75%;
+  left: 20%;
   margin-top: 3.5rem;
 }
 
@@ -146,6 +142,44 @@ html {
 }
 
 .body--aleks-syntek .ribbon {
+  background-color: #ffdd59; /* Yriel Yellow */
+  color: #000000;
+}
+
+/* July 2018 */
+.body--july-2018 {
+  background-color: #1e272e;
+}
+
+.body--july-2018 .container {
+  background-color: #241b18;
+  background-image: url("https://cps-static.rovicorp.com/3/JPG_500/MI0004/226/MI0004226725.jpg");
+  background-size: 75%;
+  background-position: bottom right;
+}
+
+.body--july-2018 .subtitle,
+.body--july-2018 .section__subtitle,
+.body--july-2018 .metadata {
+  color: #ffffff;
+}
+
+.body--july-2018 .title,
+.body--july-2018 .section__title {
+  color: #ffdd59; /* Yriel Yellow */
+}
+
+.body--july-2018 .section--main {
+  width: 80%;
+  left: 15%;
+  margin-top: 1rem;
+}
+
+.body--july-2018 .metadata {
+  bottom: .5rem;
+}
+
+.body--july-2018 .ribbon {
   background-color: #ffdd59; /* Yriel Yellow */
   color: #000000;
 }
